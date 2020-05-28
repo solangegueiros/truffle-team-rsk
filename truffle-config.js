@@ -20,17 +20,17 @@
   
   module.exports = {
     networks: {
-      development: {
-        host: "127.0.0.1",
-        port: 4444,
-        network_id: "*"
-      },
-      testnet: {
-        provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/', 0, 10, true, "m/44'/37310'/0'/0/"),
-        network_id: 31,
-        gasPrice: Math.floor(gasPriceTestnet * 1.1),
-        networkCheckTimeout: 1e9
-      },
+      // development: {
+      //   host: "127.0.0.1",
+      //   port: 4444,
+      //   network_id: "*"
+      // },   
+      // testnet: {
+      //   provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/', 0, 10, true, "m/44'/37310'/0'/0/"),
+      //   network_id: 31,
+      //   gasPrice: Math.floor(gasPriceTestnet * 1.1),
+      //   networkCheckTimeout: 1e9
+      // },
     },
     compilers: {
       solc: {
