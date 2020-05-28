@@ -11,6 +11,7 @@ module.exports = {
   compilers: {
     solc: {
       //version: "^0.5.5", // A version or constraint - Ex. "^0.5.0",
+      version: "0.5.4",
       settings: {        
         evmVersion: "constantinople"
       }  
