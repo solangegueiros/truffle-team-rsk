@@ -1,40 +1,21 @@
-  // See <http://truffleframework.com/docs/advanced/configuration>
-  // to customize your Truffle configuration!
-
-  // const HDWalletProvider = require('@truffle/hdwallet-provider');
-
-  // const fs = require('fs');
-  // const mnemonic = fs.readFileSync(".secret").toString().trim();
-  //  if (!mnemonic || mnemonic.split(' ').length !== 12) {
-  //   // throw new Error('unable to retrieve mnemonic from .secret');
-  //   console.log('unable to retrieve mnemonic from .secret');
-  // }
-  
-  // const gasPriceTestnetRaw = fs.readFileSync(".gas-price-testnet.json").toString().trim();
-  // const gasPriceTestnet = parseInt(JSON.parse(gasPriceTestnetRaw).result, 16);
-  // if (typeof gasPriceTestnet !== 'number' || isNaN(gasPriceTestnet)) {
-  //   //throw new Error('unable to retrieve network gas price from .gas-price-testnet.json');
-  //   console.log('unable to retrieve network gas price from .gas-price-testnet.json');
-  // }
-  // console.log("Gas price Testnet: " + gasPriceTestnet);
-  
-  module.exports = {
-    networks: {
-      // development: {
-      //   host: "127.0.0.1",
-      //   port: 4444,
-      //   network_id: "*"
-      // },   
-      // testnet: {
-      //   provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/', 0, 10, true, "m/44'/37310'/0'/0/"),
-      //   network_id: 31,
-      //   gasPrice: Math.floor(gasPriceTestnet * 1.1),
-      //   networkCheckTimeout: 1e9
-      // },
-    },
-    compilers: {
-      solc: {
-        version: "0.5.2",
-      }
-    }
-  }
+module.exports = {
+  // Uncommenting the defaults below 
+  // provides for an easier quick-start with Ganache.
+  // You can also follow this format for other networks;
+  // see <http://truffleframework.com/docs/advanced/configuration>
+  // for more details on how to specify configuration options!
+  //
+  //networks: {
+  //  development: {
+  //    host: "127.0.0.1",
+  //    port: 7545,
+  //    network_id: "*"
+  //  },
+  //  test: {
+  //    host: "127.0.0.1",
+  //    port: 7545,
+  //    network_id: "*"
+  //  }
+  //}
+  //
+};
